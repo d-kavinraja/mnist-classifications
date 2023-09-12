@@ -5,36 +5,24 @@
 To Develop a convolutional deep neural network for digit classification and to verify the response for scanned handwritten images.
 
 ## Problem Statement and Dataset
-The MNIST dataset is a collection of handwritten digits. The task is to classify a given image of a handwritten digit into one of 10 classes representing integer values from 0 to 9, inclusively. The dataset has a collection of 60,000 handwrittend digits of size 28 X 28. Here we build a convolutional neural network model that is able to classify to it's appropriate numerical value. 
-## ![output](./images/data.png)
-
+The MNIST dataset is a collection of handwritten digits. The task is to classify a given image of a handwritten digit into one of 10 classes representing integer values from 0 to 9, inclusively. The dataset has a collection of 60,000 handwrittend digits of size 28 X 28. Here we build a convolutional neural network model that is able to classify to it's appropriate numerical value. ![output](./images/data.png)
 ## Neural Network Model
 ![output](./images/model.png)
-
 ## DESIGN STEPS
-
 ### STEP 1:
 Import tensorflow and preprocessing libraries
-
 ### STEP 2:
 Download and load the dataset
-
 ### STEP 3:
 Scale the dataset between it's min and max values
-
 ### STEP 4:
 Using one hot encode, encode the categorical values
-
 ### STEP-5:
 Split the data into train and test
-
 ### STEP-6:
 Build the convolutional neural network model
-
 ### STEP-7:
 Train the model with the training data and Plot the performance plot
-
-
 ### STEP-9:
 Evaluate the model with the testing data and Fit the model and predict the single input
 
@@ -119,25 +107,15 @@ print(x_single_prediction)
 plt.imshow(img_28_gray_scaled.reshape(28,28),cmap='gray')
 
 ```
-
 ## OUTPUT
-
 ### Training Loss vs Validation Loss and accuracy vs val_accuracy
 ![output](./images/loss_graph.png)
 ![output](./images/accuracygraph.png)
-
-
 ### Classification Report
 ![output](./images/cla_report.png)
-
 ### Confusion Matrix
 ![output](./images/confusion.png)
-
-
-
 ### New Sample Data Prediction
 ![output](./images/new_data.png)
-
-
 ## RESULT
 hus, a convolutional deep neural network for digit classification and to verify the response for scanned handwritten images is written and executed successfully.
